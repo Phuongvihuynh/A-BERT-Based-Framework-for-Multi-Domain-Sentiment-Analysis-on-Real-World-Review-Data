@@ -1,11 +1,11 @@
 
-# 🧠 BERT-Based Multi-Domain Sentiment Analysis Framework
+# BERT-Based Multi-Domain Sentiment Analysis Framework
 
 > **Aspect-Category-Opinion-Sentiment (ACOS) Extraction across E-commerce, Hospitality, and Online Education using BERT-mini**
 
 ![Model Diagram](./assets/model_architecture.png)
 
-## 📌 Overview
+## Overview
 
 This repository contains the official implementation of the paper:
 
@@ -15,7 +15,7 @@ We propose a lightweight yet robust sentiment analysis pipeline using a fine-tun
 
 ---
 
-## 🔍 Features
+## Features
 
 - **Multi-domain support** (Amazon, Hotels, Coursera)
 - **Lightweight BERT-mini model** for faster inference

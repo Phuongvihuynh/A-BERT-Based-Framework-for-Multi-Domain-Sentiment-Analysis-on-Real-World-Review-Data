@@ -3,8 +3,6 @@
 
 > **Aspect-Category-Opinion-Sentiment (ACOS) Extraction across E-commerce, Hospitality, and Online Education using BERT-mini**
 
-![Model Diagram](./assets/model_architecture.png)
-
 ## Overview
 
 This repository contains the official implementation of the paper:
@@ -39,13 +37,9 @@ We propose a lightweight yet robust sentiment analysis pipeline using a fine-tun
 │   ├── training.ipynb
 │   └── evaluation.ipynb
 ├── src/
-│   ├── data_loader.py
 │   ├── model.py
 │   ├── train.py
 │   └── evaluate.py
-├── assets/
-│   └── model_architecture.png
-├── requirements.txt
 └── README.md
 ```
 
@@ -88,35 +82,6 @@ We use a compact version of BERT:
 | Optimizer         | AdamW            |
 | Loss Function     | CrossEntropyLoss |
 | CV folds (k)      | 20               |
-
----
-
-## Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourname/bert-multidomain-sentiment.git
-cd bert-multidomain-sentiment
-```
-
-### 2. Install Requirements
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Train the Model
-
-```bash
-python src/train.py --dataset data/processed/k_fold_merge_train_valid.csv --model bert-mini
-```
-
-### 4. Evaluate
-
-```bash
-python src/evaluate.py --model checkpoints/best_model.pt --test data/processed/test.csv
-```
 
 ---
 
@@ -170,7 +135,7 @@ Common error types:
 
 ---
 
-## 📬 Contact
+## Contact
 
 For questions, reach out to:
 - **Tuyet Hue Tran**: [23C15027@student.hcmus.edu.vn](mailto:23C15027@student.hcmus.edu.vn)

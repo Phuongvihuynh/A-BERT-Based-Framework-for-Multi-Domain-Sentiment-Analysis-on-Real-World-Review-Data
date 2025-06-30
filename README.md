@@ -17,16 +17,16 @@ We propose a lightweight yet robust sentiment analysis pipeline using a fine-tun
 
 ## 🔍 Features
 
-- ✅ **Multi-domain support** (Amazon, Hotels, Coursera)
-- 📦 **Lightweight BERT-mini model** for faster inference
-- 🧱 **Aspect-based sentiment analysis** with full ACOS quadruple extraction
-- 🔁 Balanced training via **Stratified K-Fold Cross-Validation**
-- 📈 Clear metrics: Accuracy, Precision, Recall, Macro/Weighted F1
-- 🔍 Error analysis included to improve domain interpretability
+- **Multi-domain support** (Amazon, Hotels, Coursera)
+- **Lightweight BERT-mini model** for faster inference
+- **Aspect-based sentiment analysis** with full ACOS quadruple extraction
+- Balanced training via **Stratified K-Fold Cross-Validation**
+- Clear metrics: Accuracy, Precision, Recall, Macro/Weighted F1
+- Error analysis included to improve domain interpretability
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```bash
 ├── data/
@@ -51,7 +51,7 @@ We propose a lightweight yet robust sentiment analysis pipeline using a fine-tun
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 We use the **OATS Dataset** curated from real-world review platforms. Each review is labeled with:
 
@@ -69,7 +69,7 @@ We use the **OATS Dataset** curated from real-world review platforms. Each revie
 
 ---
 
-## ⚙️ Model Details
+## Model Details
 
 We use a compact version of BERT:
 
@@ -91,7 +91,7 @@ We use a compact version of BERT:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -120,7 +120,7 @@ python src/evaluate.py --model checkpoints/best_model.pt --test data/processed/t
 
 ---
 
-## 📈 Results
+## Results
 
 | Domain     | Accuracy | Macro-F1 | Neutral F1 |
 |------------|----------|----------|-------------|
@@ -131,25 +131,25 @@ python src/evaluate.py --model checkpoints/best_model.pt --test data/processed/t
 
 ---
 
-## 📉 Error Analysis
+## Error Analysis
 
 Common error types:
-- ❌ Missing `aspect` or `opinion` in valid `sentiment` entries
-- 🤔 Ambiguous expressions like _"Love it!"_ or _"Highly recommended."_
-- ⛔ Incomplete phrases (e.g., _"They taste like"_)
+- Missing `aspect` or `opinion` in valid `sentiment` entries
+- Ambiguous expressions like _"Love it!"_ or _"Highly recommended."_
+- Incomplete phrases (e.g., _"They taste like"_)
 
 ---
 
 ## 🔮 Future Work
 
-- 🔁 Integrate domain-adaptive pretraining
-- 🧠 Use prompt-tuning for low-resource classes
-- 📚 Enhance with external knowledge graphs
-- 🧪 Extend to other domains (healthcare, finance)
+- Integrate domain-adaptive pretraining
+- Use prompt-tuning for low-resource classes
+- Enhance with external knowledge graphs
+- Extend to other domains (healthcare, finance)
 
 ---
 
-## 📚 Citation
+## Citation
 
 ```bibtex
 @article{huynh2025sentiment,
@@ -162,7 +162,7 @@ Common error types:
 
 ---
 
-## 🙌 Acknowledgments
+## Acknowledgments
 
 - OATS Dataset by Chebolu et al. (2024)
 - HuggingFace Transformers
